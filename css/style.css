@@ -104,6 +104,25 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
+  
+}
+
+.psevdo{
+  position: relative;
+}
+
+.psevdo::after{
+  content:"";
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  display: block;
+  background: #404bbf;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  
+  
 }
 
 .header-link-nav:hover,
@@ -142,6 +161,12 @@ body {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Section-HERO/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  margin: 0 auto;
   
 }
 
@@ -203,6 +228,21 @@ body {
   width: calc((100% - 72px) / 4);
 }
 
+.info-div{
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  border: 1px solid #8e8f99;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.info-svg{
+
+}
+
 .info-h-tree {
   font-weight: 500;
   font-size: 20px;
@@ -248,6 +288,7 @@ body {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-div{
@@ -275,6 +316,39 @@ body {
   color: #434455;
   
 }
+
+.team-socseti-ul{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  
+}
+
+.team-socseti-li{
+
+}
+
+.team-socseti-a{
+  background-color: #4d5ae5;
+  width:40px;
+  height:40px; 
+  
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-socseti-a:hover,
+.team-socseti-a:focus{
+  background-color: #404bbf;
+}
+
+.team-svg{
+  fill: #f4f4fd;
+}
+
+
 /*====================SECTION-3=====================*/
 
 /*====================SECTION-4=====================*/
@@ -303,6 +377,34 @@ body {
 
 .portfolio-li{
   width: calc((100% - 48px) / 3);
+}
+
+.overley-div{
+  position: relative;
+  overflow: hidden;
+}
+
+.overley-div:hover .overley{
+  transform: translateY(0);
+}
+
+.overley{
+  
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+background-color: #4d5ae5;
+
+padding-top: 40px;
+padding-left: 32px;
+padding-right: 32px;
+padding-bottom: 164px;
+position: absolute;
+top: 0;
+transform: translateY(100%);
+transition: transform 800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .portfolio-div{
@@ -338,6 +440,16 @@ padding: 32px 16px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+.flex-page{
+  display: flex;
+  align-items: baseline;
+ }
+
+ .div-logo{
+  margin-right: 120px;
+ }
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -362,4 +474,26 @@ padding: 32px 16px;
   color: #f4f4fd;
   max-width: 264px;
 }
+
+
+
+.footer-socseti-p{
+margin-bottom: 16px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+}
+
+.footer-socseti-ul{
+  display: flex;
+  gap: 16px;
+
+}
+
+.footer-socseti-a{
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*====================FOOTER=====================*/
